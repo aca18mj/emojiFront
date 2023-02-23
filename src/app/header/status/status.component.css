@@ -1,0 +1,37 @@
+.dot {
+  height: 14px;
+  width: 14px;
+  
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dot-container {
+    height: 100%;
+    padding-right: 0;
+}
+
+.green-dot {
+    background-color: rgb(11, 165, 11);
+}
+
+.yellow-dot {
+    background-color: rgb(204, 151, 38);
+}
+
+.red-dot {
+    background-color: rgb(136, 18, 18);
+}
+
+.status-text {
+    font-weight: 400 !important;
+    line-height: 33px;
+    border: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: rgb(33, 37, 41);
+    background-color: rgb(33, 37, 41) !important;
+    color: rgb(245, 241, 238) !important;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}

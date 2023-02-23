@@ -1,0 +1,17 @@
+<div class="row align-items-center justify-content-center status-text mx-2 me-xl-5 mt-5 py-sm-4">
+    <div class="col-6 text-end">
+        <p class="mb-0">$> Model status: </p>
+    </div>
+    <div class="col-1 text-center dot-container">
+        <span class="dot" [class.green-dot]="modelStatus == 'Ready'" [class.yellow-dot]="modelStatus == 'Checking'"
+            [class.red-dot]="modelStatus == 'Unavailable'">
+        </span>
+    </div>
+    <div class="col-4">
+        <p class="mb-0">{{ modelStatus }}</p>
+    </div>
+</div>
+
+<div class="status-container">
+
+</div>

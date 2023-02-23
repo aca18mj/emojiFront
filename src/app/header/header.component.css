@@ -1,0 +1,12 @@
+.custom-serif {
+    font-family: Georgia, serif;
+    font-size: 56px;
+    font-weight: 700 !important;
+    line-height: 64px;
+}
+
+.custom-paragraph {
+    font-size: 22px;
+    font-weight: 400 !important;
+    line-height: 33px;
+}

@@ -1,0 +1,33 @@
+<div class="container mt-5">
+    <div  class="row justify-content-center">
+        <div id="formContainer" class="col-9">
+            <img id="arrow" src="assets/img/curved_arrow.svg" class="filter-gray">
+            <div class="row justify-content-center">
+                <div class="col-10">
+                    <form (ngSubmit)="onSubmit()" #f="ngForm">
+                        <div class="input-group mb-3">
+                            <input
+                                id="user_input"
+                                type="text"
+                                class="form-control shadow-none"
+                                placeholder="Your sentence"
+                                aria-label="Your sentence"
+                                ngModel
+                                name="sentence"
+                                required
+                                #sentence="ngModel">
+                            <button class="btn btn-dark" type="submit">Predict</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
+            <div id="emojiContainer" class="row mt-3 justify-content-center">
+                <div class="col-3 text-center">
+                    <h1>{{prediction}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

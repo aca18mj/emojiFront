@@ -16,8 +16,15 @@
     background-color: rgb(11, 165, 11);
 }
 
+@keyframes yellow-blink {
+    from {background-color: rgb(33, 37, 41);}
+    to {background-color: rgb(204, 151, 38);}
+}
+
 .yellow-dot {
-    background-color: rgb(204, 151, 38);
+    animation-name: yellow-blink;
+    animation-duration: 0.4s;
+    animation-duration: infinite;
 }
 
 .red-dot {

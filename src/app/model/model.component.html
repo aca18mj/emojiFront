@@ -15,6 +15,7 @@
                                 ngModel
                                 name="sentence"
                                 required
+                                maxlength="80"
                                 #sentence="ngModel">
                             <button [disabled]="modelStatus != 'Ready' || isLoading" class="btn btn-dark submit-button fs-5" type="submit">Submit</button>
                           </div>
@@ -23,6 +24,7 @@
             </div>
             <div id="emojiContainer" class="row mt-3 justify-content-center">
                 <div class="col-10 text-center">
+                    <app-spinner *ngIf="!prediction.length"></app-spinner>
                     <h1 *ngIf="prediction.length > 0">{{prediction}}</h1>
                 </div>
             </div>

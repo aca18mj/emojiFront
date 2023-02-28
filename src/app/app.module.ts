@@ -7,13 +7,15 @@ import { ModelComponent } from './model/model.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StatusComponent } from './header/status/status.component';
+import { SpinnerComponent } from './model/spinner/spinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ModelComponent,
-    StatusComponent
+    StatusComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

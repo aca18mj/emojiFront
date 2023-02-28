@@ -5,7 +5,7 @@ import { BehaviorSubject, Observable, retry, Subject } from "rxjs";
 @Injectable({ providedIn: "root" })
 export class ModelMessenger {
     private initialiseURL = 'SECRET';
-    private predictURL = 'SECERT';
+    private predictURL = 'SECRET';
 
     modelStatus = new BehaviorSubject<string>('Checking');
 
@@ -25,7 +25,6 @@ export class ModelMessenger {
                 },
                 error: (e) => {
                     this.modelStatus.next('Unavailable');
-                    console.log(e);
                 }
             });
     }
